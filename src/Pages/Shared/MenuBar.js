@@ -51,7 +51,7 @@ const MenuBar = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost normal-case text-xl pl-20">
-          <img className="w-28 h-auto" src={Logo} alt="" />
+          <img className="w-32 h-auto" src={Logo} alt="" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
