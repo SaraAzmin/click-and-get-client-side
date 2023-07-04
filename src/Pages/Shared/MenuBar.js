@@ -24,7 +24,7 @@ const MenuBar = () => {
   );
 
   return (
-    <div className="navbar bg-sky-600 text-white flex justify-between pr-20 lg:py-3 md:py-0">
+    <div className="navbar sticky top-0 bg-sky-600 text-white flex justify-between pr-20 lg:py-3 md:py-0">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
