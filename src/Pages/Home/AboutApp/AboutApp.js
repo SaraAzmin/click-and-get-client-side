@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutApp = () => {
   return (
-    <div className="bg-slate-100">
+    <div className="bg-sky-100">
       <section className="mx-5 lg:mx-20 px-10 py-10 ">
         <h1 className="text-xl md:text-3xl font-semibold mb-3 md:mb-5 text-blue-800">
           Why Us?
