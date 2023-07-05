@@ -15,9 +15,9 @@ const ProductCard = ({ product }) => {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title text-blue-800 font-semibold">{name}</h2>
+          <h2 className="card-title text-blue-800 font-medium md:font-semibold">{name}</h2>
           <p className="text-justify text-xs">{description}</p>
-          <div className="md:flex justify-between my-2 py-1 lg:border-y-2">
+          <div className="md:flex justify-between md:my-2 py-1 lg:border-y-2">
             <h5 className="text-gray-600 text-sm font-medium">
               Available:{" "}
               <span className=" text-blue-800"> {availableQuantity}</span>
@@ -31,7 +31,7 @@ const ProductCard = ({ product }) => {
             <h5 className="text-gray-600 text-lg font-medium">
               Price: <span className=" text-blue-800">€{price}</span>
             </h5>
-            <button className="btn bg-blue-800 text-white hover:text-blue-800 hover:border-sky-800 hover:bg-slate-100">
+            <button className="btn bg-blue-800 text-white hover:bg-slate-100 hover:text-blue-800 hover:border-sky-800 ">
               Purchase
             </button>
           </div>
