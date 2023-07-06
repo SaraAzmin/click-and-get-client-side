@@ -18,7 +18,7 @@ const Banner = () => {
               Doorstep!
             </h1>
             <p className="mb-5">
-            <span className="text-blue-500">CLICKandGET</span>: Shop Smart,
+              <span className="text-blue-500">CLICKandGET</span>: Shop Smart,
               Save Time, and Enjoy Freshness Delivered to Your Doorstep.
               Experience the future of grocery shopping with{" "}
               <span className="text-blue-500">CLICKandGET</span> today!
