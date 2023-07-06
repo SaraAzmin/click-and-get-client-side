@@ -20,7 +20,7 @@ const Reviews = () => {
       Don't just take our word for it... Read reviews from our customers
       </h3>
       <section className=" text-gray-700">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 text-center px-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-center px-5">
           {reviews.map((review) => (
             <ReviewCard key={review._id} review={review}></ReviewCard>
           ))}
