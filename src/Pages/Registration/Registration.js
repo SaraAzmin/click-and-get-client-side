@@ -146,7 +146,7 @@ const Registration = () => {
                 </form>
                 <p className="py-2">
                   Already have an account?{" "}
-                  <Link className="text-green-600 font-semibold" to="/login">
+                  <Link className="text-blue-800 font-semibold" to="/login">
                     Login here
                   </Link>
                 </p>
