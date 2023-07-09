@@ -5,6 +5,7 @@ import Registration from "../Pages/Registration/Registration"
 import Login from "../Pages/Login/Login";
 import About from "../Pages/About/About";
 import NotFound from "../Pages/NotFound/NotFound";
+import Dashboard from "../Pages/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
           path: '*', 
         element: <NotFound></NotFound>
       },
+      {
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>
+    },
       ],
     },
   ]);
