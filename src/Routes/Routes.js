@@ -5,6 +5,7 @@ import Registration from "../Pages/Registration/Registration"
 import Login from "../Pages/Login/Login";
 import NotFound from "../Pages/NotFound/NotFound";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import Reviews from "../Pages/Home/Reviews/Reviews";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/dashboard',
         element: <Dashboard></Dashboard>
+    },
+    {
+path: '/reviews',
+element: <Reviews></Reviews>
     },
       ],
     },

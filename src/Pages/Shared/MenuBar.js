@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
+import { AuthContext } from "../../Contexts/AuthProvider";
 
 const MenuBar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((err) => console.log(err));
+  };
+
   const menuItems = (
     <React.Fragment>
       <li className="hover:bg-slate-300 rounded">
@@ -14,12 +23,25 @@ const MenuBar = () => {
       <li className="hover:bg-slate-300 rounded">
         <Link to="/reviews">Reviews</Link>
       </li>
-      <li className="hover:bg-slate-300 rounded">
-        <Link to="/login">Login</Link>
-      </li>
-      <li className="hover:bg-slate-300 rounded">
-        <Link to="/register">Register</Link>
-      </li>
+      {user?.uid ? (
+        <>
+          <li>
+            <Link to="/dashboard">Dashboard</Link>
+          </li>
+          <li>
+            <button onClick={handleLogOut}>Sign out</button>
+          </li>
+        </>
+      ) : (
+        <>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link to="/register">Register</Link>
+          </li>
+        </>
+      )}
     </React.Fragment>
   );
 
