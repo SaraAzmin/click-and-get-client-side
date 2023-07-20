@@ -18,7 +18,11 @@ const NotFound = () => {
           </p>
 
           <div class="flex items-center justify-center mt-6 gap-x-3">
-            <Link type="button" to='/' class="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-white transition-colors duration-200 bg-blue-800 border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-slate-100 hover:border-blue-800 hover:text-blue-800 dark:text-black dark:border-gray-700">
+            <Link
+              type="button"
+              to="/"
+              class="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-white transition-colors duration-200 bg-blue-800 border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-slate-100 hover:border-blue-800 hover:text-blue-800 dark:text-black dark:border-gray-700"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

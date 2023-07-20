@@ -44,7 +44,7 @@ const Login = () => {
                 <div className="text-center">
                   <img className="mx-auto" src={Logo} alt="logo" />
                   <h4 className="text-xl font-semibold my-2 pb-3 border-b-2 text-blue-800">
-                  Welcome back!
+                    Welcome back!
                   </h4>
                   <p className="mb-4">Please login to your account</p>
                 </div>
